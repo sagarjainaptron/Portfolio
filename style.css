@@ -1,0 +1,263 @@
+*{
+	margin: 0 ;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background: black;
+
+}
+.image-section{
+	background: #F0F2F0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.parallexBg{
+	background-image: url('https://wallpapertag.com/wallpaper/full/4/9/1/94988-cool-background-black-1920x1080-for-ipad-pro.jpg');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 95vh;
+}
+/* .parallexBg h1{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+.parallexBg h2{
+	position: absolute;
+	top: 58%;
+	transform: translateY(-30%);
+	width: 100%;
+}
+.parallexBg button{
+	position: absolute;
+	top: 66%;
+	transform: translateY(-25%);
+	left: 46%;
+} */
+
+/* contact */
+.contactContainer{
+	width: 90%;
+	margin: auto ;
+	overflow: hidden;
+}
+.contact-section{
+	background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.9)),url('http://www.wired.com/opinion/wp-content/uploads/2014/02/business-inline.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 2%;
+	background-attachment: fixed;
+}
+.contact-section .contactContainer h2{
+	text-align: center;
+	text-decoration: underline;
+	text-underline-position: under;
+	color: rgb(238,235,235);
+	letter-spacing: 2px;
+}
+.contact-section .contactContainer p{
+	text-align: center;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3%;
+	color: #fff;
+	letter-spacing: 3px;
+}
+.contact-form i.fa{
+	font-size: 22px;
+	padding: 3%;
+	background-color: none;
+	margin: 2%;
+	border-radius: 80%;
+	cursor: pointer;
+	border: 2px solid rgb(190, 190, 190);
+	color: rgb(190, 190, 190);
+
+}
+.contact-form i.fa:hover{
+	cursor: pointer;
+	border: 2px solid #fff;
+	color: #fff;
+}
+.contact-form{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.form-info{
+	font-size: 16px;
+	font-style: italic;
+	color: #fff;
+	letter-spacing: 2px;
+}
+input{
+	padding: 10px;
+	margin: 10px;
+	width: 70%;
+	background-color: rgba(136, 133, 133, 0.5);
+	color: #fff;
+	border: none;
+	outline: none;
+}
+
+input::placeholder{
+	color: #fff;
+}
+textarea{
+	padding: 10px;
+	margin: 10px;
+	width: 70%;
+	background-color: rgba(136, 133, 133, 0.5);
+	color: #fff;
+	border: none;
+	outline: none;
+}
+
+textarea::placeholder{
+	color: #fff;
+}
+.submit{
+	width: 40%;
+	background: none;
+	padding: 4px;
+	outline: none;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 33px;
+	text-align: center;
+	cursor: pointer;
+	margin-left: 3%;
+	border: 2px solid rgb(190, 190, 190);
+	color: rgb(190, 190, 190);
+}
+.submit:hover{
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* media queries */
+@media (max-width: 768px){
+	.contact-section .contact-form{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.contact-section .submit{
+		width: 60%;
+	}
+}
+
+/* project */
+.project-section{
+	 background: linear-gradient(to bottom, #000000 0%, #000099 100%);
+/* 	 height: 100vh; */
+}
+/* .project-section h1{
+	text-align: center;
+	text-decoration: underline;
+	text-underline-position: under;
+} */
+.CardDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	
+}
+.projectCard{
+	position: relative;
+	background: #fff;
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+}
+.projectCard .content{
+	width: 400px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.projectCard .content a{
+	display: inline-block;
+	margin: 10px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 2px solid #262626;
+	color: #262626;
+	font-weight: 600;
+}
+.projectCard .sliderText{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000 ;
+}
+.projectCard .sliderText h2{
+	color: #fff;
+	font-size: 3em;
+}
+
+.swiper-slide{
+	width: 400px;
+}
+
+.swiper-slide:nth-child(1) .sliderText{
+	background: #2196f3;
+}
+.swiper-slide:nth-child(2) .sliderText{
+	background: #e91e63;
+}
+.swiper-slide:nth-child(3) .sliderText{
+	background: #c3d41a;
+}
+.swiper-slide:nth-child(4) .sliderText{
+	background: #ff9800;
+}
+.swiper-slide:nth-child(5) .sliderText{
+	background: #c33ada;
+}
+.swiper-slide:nth-child(6) .sliderText{
+	background: #f54b42;
+}
+
+/* about */
+
+.about-section{
+	 background: linear-gradient(to bottom, #000000 0%, #000099 100%);
+	 width: 100%;
+}
+.about-section .card{
+	 box-shadow: 10px 10px 5px;
+}
+.about-section .card a{
+	display: inline-block;
+	margin: 10px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 2px solid #262626;
+	color: #262626;
+	font-weight: 600;
+}
+.about-section .card a:hover{
+	display: inline-block;
+	margin: 10px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #262626;
+	font-weight: 600;
+	background-color: orange;
+	border: none;
+}
+
