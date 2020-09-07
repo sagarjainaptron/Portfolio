@@ -167,7 +167,7 @@ textarea::placeholder{
 	text-decoration: underline;
 	text-underline-position: under;
 } */
-.CardDiv{
+/* .CardDiv{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -230,6 +230,16 @@ textarea::placeholder{
 }
 .swiper-slide:nth-child(6) .sliderText{
 	background: #f54b42;
+} */
+
+.content a{
+	display: inline-block;
+	margin: 10px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 2px solid #262626;
+	color: #262626;
+	font-weight: 600;
 }
 
 /* about */
@@ -267,9 +277,9 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 }
 
-@media(max-width: 950px) {
+/* @media(max-width: 950px) {
 	.projectCard{
 		display: none;
 	}
-}
+} */
 
